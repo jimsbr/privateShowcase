@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jim · Showcase</title>
+<style>
+:root{--bg:#000;--fg:#d6f7ff;--dim:#6fa8b8;--c:#00e5ff;--card:#050c0e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+*{box-sizing:border-box}
+body{margin:0;background:#000;color:var(--fg);font:16px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+a{color:var(--c)}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:#000d;backdrop-filter:blur(8px);border-bottom:1px solid #00e5ff44;box-shadow:0 0 18px #00e5ff33}
+.row{display:flex;flex-wrap:wrap;gap:6px 16px;padding:8px 16px;max-width:1000px;margin:auto;align-items:center}
+.row.soc{border-top:1px solid #00e5ff22;font-size:13px;color:var(--dim)}
+.nav a{text-decoration:none;color:var(--fg)}.nav a:hover{color:var(--c);text-shadow:0 0 8px var(--c)}
+.logo{color:var(--c);font-weight:700;text-shadow:0 0 10px var(--c)}
+main{max-width:1000px;margin:auto;padding:0 16px 50px}
+section{padding:30px 0 4px}
+h1{font-size:clamp(34px,7vw,64px);margin:40px 0 6px;color:var(--c);text-shadow:0 0 22px var(--c),0 0 48px #00e5ff77;line-height:1.1}
+h2{color:var(--c);text-shadow:0 0 12px #00e5ffaa;margin:0 0 10px}h2::before{content:"> ";opacity:.6}
+.card{background:var(--card);border:1px solid #00e5ff55;border-radius:10px;padding:16px;margin:12px 0;box-shadow:0 0 16px #00e5ff22}
+.btn{display:inline-block;padding:7px 14px;border:1px solid var(--c);border-radius:6px;text-decoration:none;color:var(--c);box-shadow:0 0 12px #00e5ff55,inset 0 0 8px #00e5ff22;margin:4px 6px 4px 0}
+.btn:hover{background:var(--c);color:#000}
+.dim{color:var(--dim)}
+iframe{width:100%;border:1px solid #00e5ff55;border-radius:10px;background:#000;display:block}
+.tw{height:520px}.vid{aspect-ratio:16/9;height:auto}
+.short{float:right;width:min(34vw,170px);aspect-ratio:9/16;margin:14px 0 8px 14px}
+.car{position:relative}
+.track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 2px 12px;scrollbar-width:thin;scrollbar-color:#00e5ff #000}
+.slide{flex:0 0 min(440px,86%);scroll-snap-align:start;background:var(--card);border:1px solid #00e5ff55;border-radius:10px;padding:12px;box-shadow:0 0 16px #00e5ff22}
+.slide.w{flex-basis:min(640px,92%)}
+.cap{margin-bottom:8px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;color:var(--c)}
+.cap a{font-size:13px}
+.nb{position:absolute;top:42%;z-index:2;width:38px;height:38px;border-radius:50%;background:#000c;color:var(--c);border:1px solid var(--c);box-shadow:0 0 12px #00e5ff77;font-size:20px;cursor:pointer}
+.nb.p{left:-8px}.nb.n{right:-8px}
+.term{background:#02080a;border:1px solid #00e5ff77;border-radius:8px;box-shadow:0 0 22px #00e5ff44}
+.term .bar{padding:6px 12px;border-bottom:1px solid #00e5ff44;color:var(--dim);font-size:13px}
+.term pre{margin:0 0 8px;padding:10px 14px;white-space:pre-wrap}
+.cur{animation:b 1s steps(1) infinite}@keyframes b{50%{opacity:0}}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0}
+.node{border:1px solid var(--c);border-radius:8px;padding:8px 12px;box-shadow:0 0 10px #00e5ff44;background:#02080a;font-size:14px;text-align:center}
+.arr{color:var(--c);font-size:20px}
+.phones{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:14px 0}
+.ph{border:2px solid #00e5ff88;border-radius:22px;padding:14px;background:#02080a;box-shadow:0 0 16px #00e5ff33;font-size:13px}
+.ph h4{margin:0 0 8px;color:var(--c)}
+.big{font-size:26px;color:#fff}
+.pill{display:inline-block;background:var(--c);color:#000;border-radius:20px;padding:4px 14px;font-weight:700;margin-top:8px}
+ul.c{columns:2 220px;padding-left:18px;margin:8px 0}
+.warn{border-color:#ffb300aa;box-shadow:0 0 14px #ffb30033}
+footer{text-align:center;color:var(--dim);padding:26px 16px}
+</style></head><body>
+<nav class="nav">
+<div class="row"><span class="logo">JIM.exe</span><a href="#support">Support</a><a href="#studio">Game Studio</a><a href="#promos">Projects</a><a href="#live">Livestreaming</a><a href="#music">Music</a><a href="#videos">Videos</a><a href="#regions">Regions</a></div>
+<div class="row soc"><span>socials:</span><a href="https://linktr.ee/usernameisjim" target="_blank" rel="noopener">Linktree</a><a href="https://x.com/jimsbr" target="_blank" rel="noopener">X</a><a href="https://twitch.tv/dapyrean" target="_blank" rel="noopener">Twitch</a><a href="https://wavlake.com/sabu" target="_blank" rel="noopener">Wavlake</a></div>
+</nav>
+<main>
+<iframe class="short" title="YouTube Short" src="https://www.youtube.com/embed/hLqXOFpgN-I" loading="lazy" allowfullscreen></iframe>
+<h1>Showcase<span class="cur">_</span></h1>
+<p class="dim">Games, bitcoin projects, robotics, music and live streams.</p>
+
+<section id="support"><h2>Support &amp; Payments</h2>
+<div class="card"><b>Send to any family member, easily</b>
+<p>Register at <a href="https://highermark.xyz" target="_blank" rel="noopener">highermark.xyz</a> and you can send to any family member with ease. You can also buy bitcoin right on the platform.</p>
+<ol><li>Create your account at highermark.xyz.</li><li>Complete the verification steps.</li><li>Send, or buy bitcoin on the platform.</li></ol>
+<h3 style="color:var(--c)">From bitcoin to a debit card, instantly</h3>
+<p>Once you have bitcoin on highermark, send it to a family member's Cash App, where it can be cashed out to a debit card right away.</p>
+<div class="flow"><span class="node">highermark.xyz</span><span class="arr">&rarr;</span><span class="node">Send<br>bitcoin</span><span class="arr">&rarr;</span><span class="node">Cash App<br>Bitcoin</span><span class="arr">&rarr;</span><span class="node">Sell<br>bitcoin</span><span class="arr">&rarr;</span><span class="node">Cash<br>balance</span><span class="arr">&rarr;</span><span class="node">Instant Deposit<br>to debit card</span></div>
+<div class="phones">
+<div class="ph"><h4>1 &middot; Bitcoin arrives</h4><div class="dim">Bitcoin</div><div class="big">0.0042 BTC</div><div class="dim">received from highermark</div><span class="pill">Sell</span></div>
+<div class="ph"><h4>2 &middot; Sold to cash</h4><div class="dim">Cash balance</div><div class="big">$ 285.00</div><div class="dim">Sale proceeds land here</div><span class="pill">Cash Out</span></div>
+<div class="ph"><h4>3 &middot; Instant Deposit</h4><div class="dim">Send to debit card</div><div class="big">Any bank</div><div class="dim">Bank of America &middot; USAA &middot; Mercury &middot; any debit card</div><span class="pill">Instant</span></div>
+<div class="ph"><h4>4 &middot; Spend it</h4><div class="dim">Cash balance</div><div class="big">Debit card</div><div class="dim">Use the balance like a debit card</div><span class="pill">Cash Card</span></div>
+</div>
+<b>Lightning, straight from cash balance</b>
+<p>Lightning can be spent directly from the cash balance and received without touching bitcoin. You receive and spend from your cash balance.</p>
+<div class="flow"><span class="node">Receive<br>Lightning</span><span class="arr">&rarr;</span><span class="node">Cash<br>balance</span><span class="arr">&rarr;</span><span class="node">Spend<br>Lightning</span></div>
+<p class="dim">Instant Deposit fees, limits and availability can vary. Check Cash App for current details.</p>
+<div class="card warn"><b>Heads up:</b> I can't accept anything until I upload a new ID.</div>
+<a class="btn" href="https://whop.com/checkout/ch_RGsDi8Q3RglPR4i/" target="_blank" rel="noopener">Open checkout</a></div></section>
+
+<section id="studio"><h2>Game Studio</h2>
+<iframe style="height:420px" src="https://4thsol.online/game-studio" title="4thsol Game Studio" loading="lazy"></iframe>
+<p class="dim">Not loading? <a href="https://4thsol.online/game-studio" target="_blank" rel="noopener">Open the Game Studio</a>.</p>
+<div class="card"><b>Playtests are live</b><br>
+<a class="btn" href="https://tesana.com/play/abaa9d2d-a61b-4195-bede-d61dbb8d4538" target="_blank" rel="noopener">Play Mafias Through Time</a>
+<a class="btn" href="https://4thsol.online/game-studio" target="_blank" rel="noopener">Play Presence</a>
+<div class="car"><button class="nb p" aria-label="Previous">&lsaquo;</button><button class="nb n" aria-label="Next">&rsaquo;</button><div class="track">
+<div class="slide"><iframe class="tw" title="Mafias Through Time" src="https://platform.twitter.com/embed/Tweet.html?id=2111252604110152097&theme=dark&dnt=true" loading="lazy" allowfullscreen></iframe></div>
+<div class="slide"><iframe class="tw" title="Mafias Through Time" src="https://platform.twitter.com/embed/Tweet.html?id=2102961408740884861&theme=dark&dnt=true" loading="lazy" allowfullscreen></iframe></div>
+<div class="slide"><iframe class="tw" title="Mafias Through Time" src="https://platform.twitter.com/embed/Tweet.html?id=2101810711412269119&theme=dark&dnt=true" loading="lazy" allowfullscreen></iframe></div>
+</div></div></div></section>
+
+<section id="promos"><h2>Projects</h2>
+<div class="car"><button class="nb p" aria-label="Previous">&lsaquo;</button><button class="nb n" aria-label="Next">&rsaquo;</button><div class="track">
+<div class="slide"><div class="cap">Bitcoin Cookie <a href="https://bitcoincookie.com" target="_blank" rel="noopener">bitcoincookie.com</a></div><iframe class="tw" title="Bitcoin Cookie" src="https://platform.twitter.com/embed/Tweet.html?id=2101554149733122130&theme=dark&dnt=true" loading="lazy" allowfullscreen></iframe></div>
+<div class="slide"><div class="cap">Spine <a href="https://spine.game" target="_blank" rel="noopener">spine.game</a></div><iframe class="tw" title="Spine" src="https://platform.twitter.com/embed/Tweet.html?id=2101297390527394124&theme=dark&dnt=true" loading="lazy" allowfullscreen></iframe></div>
+<div class="slide"><div class="cap">Robotics in Raleigh</div><iframe class="tw" title="Robotics in Raleigh" src="https://platform.twitter.com/embed/Tweet.html?id=2100951163046625545&theme=dark&dnt=true" loading="lazy" allowfullscreen></iframe></div>
+<div class="slide"><div class="cap">CLI tool</div><div class="term"><div class="bar">jim@studio: ~/cli</div><pre>$ jim --tool run
+<span style="color:var(--c)">&#10003; online</span><span class="cur">&#9608;</span></pre><iframe class="tw" title="CLI tool" src="https://platform.twitter.com/embed/Tweet.html?id=2098417759063265707&theme=dark&dnt=true" loading="lazy" allowfullscreen></iframe></div></div>
+<div class="slide"><div class="cap">Lab update</div><iframe class="tw" title="Lab update" src="https://platform.twitter.com/embed/Tweet.html?id=2097907977067917478&theme=dark&dnt=true" loading="lazy" allowfullscreen></iframe></div>
+<div class="slide"><div class="cap">Umbrel</div><iframe class="tw" title="Umbrel" src="https://platform.twitter.com/embed/Tweet.html?id=2108590117711696118&theme=dark&dnt=true" loading="lazy" allowfullscreen></iframe></div>
+<div class="slide"><div class="cap">Umbrel</div><iframe class="tw" title="Umbrel" src="https://platform.twitter.com/embed/Tweet.html?id=2107793792288055651&theme=dark&dnt=true" loading="lazy" allowfullscreen></iframe></div>
+<div class="slide"><div class="cap">Umbrel</div><iframe class="tw" title="Umbrel" src="https://platform.twitter.com/embed/Tweet.html?id=2105644156421075273&theme=dark&dnt=true" loading="lazy" allowfullscreen></iframe></div>
+</div></div></section>
+
+<section id="live"><h2>Livestreaming</h2>
+<div class="card"><a class="btn" href="https://twitch.tv/dapyrean" target="_blank" rel="noopener">Twitch: dapyrean</a>
+<a class="btn" href="https://zap.stream/p/nprofile1qqs2ffctpvx695w6ps98875hm6a95a03txmrft6rmuhqpk504h7hetq40wyyk" target="_blank" rel="noopener">zap.stream</a>
+<iframe class="tw" style="max-width:560px;margin-top:10px" title="Stream announcement" src="https://platform.twitter.com/embed/Tweet.html?id=2098276310443286790&theme=dark&dnt=true" loading="lazy" allowfullscreen></iframe></div></section>
+
+<section id="music"><h2>Music</h2>
+<div class="card"><a class="btn" href="https://wavlake.com/sabu" target="_blank" rel="noopener">Listen on Wavlake: sabu</a></div></section>
+
+<section id="videos"><h2>Watch</h2>
+<div class="car"><button class="nb p" aria-label="Previous">&lsaquo;</button><button class="nb n" aria-label="Next">&rsaquo;</button><div class="track">
+<div class="slide w"><iframe class="vid" title="Video" src="https://www.youtube.com/embed/dpU3v9BenEU" loading="lazy" allowfullscreen></iframe></div>
+<div class="slide w"><iframe class="vid" title="Video" src="https://www.youtube.com/embed/_ZpLbriJXvM" loading="lazy" allowfullscreen></iframe></div>
+<div class="slide w"><iframe class="vid" title="Video" src="https://www.youtube.com/embed/WAZ8PV8L9YU" loading="lazy" allowfullscreen></iframe></div>
+<div class="slide w"><iframe class="vid" title="Video" src="https://www.youtube.com/embed/YOS3iIE3BAs" loading="lazy" allowfullscreen></iframe></div>
+<div class="slide w"><iframe class="vid" title="Video" src="https://www.youtube.com/embed/F1_0Lkp16Rc" loading="lazy" allowfullscreen></iframe></div>
+<div class="slide w"><iframe class="vid" title="Video" src="https://www.youtube.com/embed/ovxL42LkKNg" loading="lazy" allowfullscreen></iframe></div>
+</div></div>
+<a class="btn" href="https://www.youtube.com/@AnthonyPompliano/videos" target="_blank" rel="noopener">Anthony Pompliano</a>
+<a class="btn" href="https://www.youtube.com/@CodieSanchezCT" target="_blank" rel="noopener">Codie Sanchez</a></section>
+
+<section id="regions"><h2>Unsupported Regions</h2>
+<div class="card"><p>These are the <b>only</b> countries not supported:</p><ul class="c" id="cl"></ul>
+<p class="dim">Source: <a href="https://docs.whop.com/trust-and-safety/trust-safety-overview/sanctioned-countries" target="_blank" rel="noopener">Whop sanctioned countries</a></p></div></section>
+</main>
+<footer>&copy; Jim</footer>
+<script>
+var c=["Afghanistan","Belarus","Burundi","Central African Republic","Comoros","Cuba","Democratic Republic of the Congo","Eritrea","Haiti","Iran","Iraq","Lesotho","Libya","Myanmar","North Korea","Palestine","Papua New Guinea","Russia","Somalia","South Sudan","Sudan","Syria","Ukraine (only Crimea, Sevastopol, Donetsk, Luhansk, Zaporizhzhia and Kherson)","Venezuela","Yemen"];
+document.getElementById("cl").innerHTML=c.map(function(x){return"<li>"+x+"</li>"}).join("");
+var still=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+document.querySelectorAll(".car").forEach(function(car){
+var t=car.querySelector(".track"),paused=false;
+function step(d){var w=t.querySelector(".slide").offsetWidth+14;
+if(d>0&&t.scrollLeft+t.clientWidth>=t.scrollWidth-6)t.scrollTo({left:0});
+else if(d<0&&t.scrollLeft<6)t.scrollTo({left:t.scrollWidth});
+else t.scrollBy({left:d*w});}
+car.querySelector(".p").onclick=function(){step(-1)};
+car.querySelector(".n").onclick=function(){step(1)};
+car.addEventListener("mouseenter",function(){paused=true});
+car.addEventListener("mouseleave",function(){paused=false});
+car.addEventListener("touchstart",function(){paused=true},{passive:true});
+if(!still)setInterval(function(){if(!paused)step(1)},5000);
+});
+</script></body></html>
